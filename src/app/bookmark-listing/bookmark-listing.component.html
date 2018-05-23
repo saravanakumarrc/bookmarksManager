@@ -1,0 +1,6 @@
+<div class="starter-template">
+  <h4>Saved Bookmarks</h4>
+  <ul *ngFor="let bookmark of getAllBookmarks()">
+    <app-bookmark-detail [bookmark]="bookmark"></app-bookmark-detail>
+  </ul>
+</div>
