@@ -17,8 +17,11 @@ export class BookmarkCreateComponent implements OnInit {
   ngOnInit() {
   }
 
-  addBookmark() {
+  addBookmark(title: string, link: string) {
+    this.bookmark = new Bookmark(title, link);
     this.bookmarksService.addBookmark(this.bookmark);
+    console.log('bookmark title:', title);
+    console.log('bookmark link:', link);
     this.bookmark = new Bookmark('', '');
   }
 

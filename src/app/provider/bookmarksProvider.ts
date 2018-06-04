@@ -12,6 +12,6 @@ export class BookmarksService {
   }
 
   constructor() {
-    this.bookmarks = [new Bookmark('google','http://google.co.in')];
+    this.bookmarks = [new Bookmark('google', 'http://google.co.in')];
   }
 }
